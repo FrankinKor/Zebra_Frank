@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
+import android.widget.TextView
 import com.example.zebra_frank.R
 import com.example.zebra_frank.zbrdatas.ZbrSetting
 
@@ -23,6 +24,14 @@ class ZbrAdapters(
         }
 
         val row = tempRow!!
+
+        val zebraData = mList[position]
+
+        val zbrSettingTitle = row.findViewById<TextView>(R.id.zbrSettingTitle)
+        val zbrSettingDescription = row.findViewById<TextView>(R.id.zbrSettingDescription)
+
+        zbrSettingTitle.text = zebraData.zbrSetting
+        zbrSettingDescription.text = zebraData.zbrDescription
 
         return row
     }
