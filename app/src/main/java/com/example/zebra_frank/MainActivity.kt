@@ -1,5 +1,6 @@
 package com.example.zebra_frank
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.zebra_frank.zbradapters.ZbrAdapters
@@ -37,5 +38,16 @@ class MainActivity : AppCompatActivity() {
 
         mZbrAdapters = ZbrAdapters(this, R.layout.zebra_setting_item, mZebraList)
         zbrListView.adapter = mZbrAdapters
+
+        zbrListView.setOnItemClickListener { adapterView, view, position, l ->
+
+            val  zbrClickedRoom = mZebraList[position]
+
+            val myIntent = Intent(this, ZebraSettingDetailActivity::class.java)
+            myIntent.putExtra("zebra", zbrClickedRoom)
+
+
+        }
+
     }
 }

@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Zebra_Frank</string>
+    <string name="zoomin">+</string>
+    <string name="zoomout">-</string>
 </resources>
