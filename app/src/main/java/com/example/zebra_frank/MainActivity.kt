@@ -41,13 +41,12 @@ class MainActivity : AppCompatActivity() {
 
         zbrListView.setOnItemClickListener { adapterView, view, position, l ->
 
-            val  zbrClickedRoom = mZebraList[position]
+            val clickedZebra = mZebraList[position]
 
-            val myIntent = Intent(this, ZebraSettingDetailActivity::class.java)
-            myIntent.putExtra("zebra", zbrClickedRoom)
-
-
+            val  myIntent = Intent(this, ZebraSettingDetailActivity::class.java)
+            myIntent.putExtra("setting", clickedZebra)
+            startActivity(myIntent)
+        }
         }
 
     }
-}

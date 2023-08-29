@@ -21,10 +21,10 @@
             android:id="@+id/zbrSettingDescription"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="14sp"
-            android:text="세팅에 대한 설명 문구"
             android:layout_marginVertical="5dp"
-            android:textColor="#868686"/>
+            android:text="세팅에 대한 설명 문구"
+            android:textColor="#868686"
+            android:textSize="14sp" />
 
 
 
