@@ -7,7 +7,7 @@
     tools:context=".ZebraSettingDetailActivity">
 
     <androidx.viewpager2.widget.ViewPager2
-        android:id="@+id/imageViewPager"
+        android:id="@+id/zebraViewPager"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/imageIndicator"

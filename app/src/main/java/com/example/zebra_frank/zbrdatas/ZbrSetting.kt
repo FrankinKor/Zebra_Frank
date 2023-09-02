@@ -4,4 +4,5 @@ import java.io.Serializable
 
 class ZbrSetting (
     val zbrSetting: String,
-    val zbrDescription: String) : Serializable
+    val zbrDescription: String,
+    val zbrResource: List<Int>) : Serializable
