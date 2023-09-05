@@ -98,12 +98,15 @@ class ZebraSettingDetailActivity : AppCompatActivity() {
         }
 
         fun resetImagesize() {
+            currentScaleFactor = 1.0f
+            notifyDataSetChanged() // 이미지 크기를 초기화하고 갱신
+        }
 
         }
 
     }
 
-    }
+
 
 
 

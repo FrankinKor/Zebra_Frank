@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
         mZebraList.add(ZbrSetting("인터페이스 설정", "USB, CDC, RS232", listOf(R.drawable.zbrusb, R.drawable.zbrcdc, R.drawable.zbr232)))
         mZebraList.add(ZbrSetting("톤 (Tone)", "비프음 톤 세팅", listOf(R.drawable.zbrbeeperhigh, R.drawable.zbrbeepermedium,R.drawable.zbrbeeperlow, R.drawable.zbrbeeperoff)))
         mZebraList.add(ZbrSetting("음량(Volume)", "비프음 음량 조절", listOf(R.drawable.zbrvolumehigh, R.drawable.zbrvolumemedium, R.drawable.zbrvolumelow)))
-        mZebraList.add(ZbrSetting("RS232 전송 속도", "9,600  19,200  38,400  57,600  115,200", listOf()))
+        mZebraList.add(ZbrSetting("RS232 전송 속도", "9,600  19,200  38,400  57,600  115,200", listOf(R.drawable.zbr9600, R.drawable.zbr19200, R.drawable.zbr38400, R.drawable.zbr57600, R.drawable.zbr115200)))
         mZebraList.add(ZbrSetting("도서 바코드 ISBN", "EAN13 Add-on", listOf(R.drawable.zbrisbn)))
         mZebraList.add(ZbrSetting("[무선] 블루투스 연결 모드", "Cardle mode, HID BT, BLE", listOf(R.drawable.zbrcradlemode, R.drawable.zbrhidbt, R.drawable.zbrble)))
         mZebraList.add(ZbrSetting("DPM 모드 & 조명", "DPM 종류별 모드, 조명 설정", listOf(R.drawable.zbrmpmmodedesccription, R.drawable.zbrdpmilluminationdescription,R.drawable.zbrdpmmode1, R.drawable.zbrdpmmode2,R.drawable.zbrdpmdirect, R.drawable.zbrdpmindirect, R.drawable.zbrdpmcycle )))

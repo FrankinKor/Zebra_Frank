@@ -3,19 +3,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".ZebraSettingDetailActivity">
+    android:orientation="vertical">
+<!--    tools:context=".ZebraSettingDetailActivity">-->
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/zebraViewPager"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/imageIndicator"
-        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginHorizontal="100dp"
-        android:layout_marginTop="165dp"
-        android:layout_marginBottom="142dp" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="0dp"/>
+<!--&lt;!&ndash;        //android:layout_marginTop="165dp"&ndash;&gt;-->
+<!--&lt;!&ndash;        //android:layout_marginBottom="143dp" />&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_alignParentStart="true"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_alignParentTop="true"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_marginHorizontal="100dp"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_marginTop="165dp"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_marginBottom="142dp" />&ndash;&gt;-->
 
     <me.relex.circleindicator.CircleIndicator3
         android:id="@+id/imageIndicator"
