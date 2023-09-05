@@ -35,11 +35,11 @@
         android:layout_marginBottom="10dp"
         android:fontFamily="sans-serif-medium"
         android:gravity="center_horizontal"
-        android:textSize="23sp"
+        android:textSize="22sp"
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/zoomInButton"
+        android:id="@+id/zbrZoomInButton"
         android:layout_width="35dp"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
@@ -55,7 +55,7 @@
         android:textSize="26sp" />
 
     <TextView
-        android:id="@+id/zoomOutButton"
+        android:id="@+id/zbrZoomOutButton"
         android:layout_width="35dp"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"

@@ -1,8 +1,9 @@
 package com.example.zebra_frank.zbrdatas
 
+import android.view.autofill.AutofillId
 import java.io.Serializable
 
 class ZbrSetting (
     val zbrSetting: String,
     val zbrDescription: String,
-    val zbrResource: List<Int>) : Serializable
+    val zbrImageResourceId: List<Int>) : Serializable
