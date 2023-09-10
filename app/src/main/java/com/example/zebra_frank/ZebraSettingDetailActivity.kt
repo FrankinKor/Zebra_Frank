@@ -12,6 +12,7 @@ import android.widget.TextView
 import androidx.appcompat.view.menu.MenuView.ItemView
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager.widget.PagerAdapter
+import androidx.viewpager.widget.ViewPager
 import androidx.viewpager2.widget.ViewPager2
 import com.example.zebra_frank.zbrdatas.ZbrSetting
 import kotlinx.android.synthetic.main.activity_main.zbrListView
@@ -20,6 +21,7 @@ import kotlinx.android.synthetic.main.zebra_setting_item.zbrSettingTitle
 import kotlinx.android.synthetic.main.activity_zebra_setting_detail.*
 import kotlinx.android.synthetic.main.zebra_setting_item.zbrSettingDescription
 import me.relex.circleindicator.CircleIndicator
+import me.relex.circleindicator.CircleIndicator3
 
 class ZebraSettingDetailActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -31,8 +33,6 @@ class ZebraSettingDetailActivity : AppCompatActivity() {
         if (zebraData != null) {
             zbrSettingTitle.text = zebraData.zbrSetting
 
-
-
             val zbrImageResourceId = zebraData.zbrImageResourceId
             // zbrImageResourceId를 사용하여 이미지를 설정하는 코드를 추가하세요.
 
@@ -40,6 +40,12 @@ class ZebraSettingDetailActivity : AppCompatActivity() {
             val viewPager = findViewById<ViewPager2>(R.id.zebraViewPager)
             val imageAdapter = ImagePagerAdapter(this, zbrImageResourceId)
             viewPager.adapter = imageAdapter
+
+            // CircleIndicator 초기화
+            val circleIndicator = findViewById<CircleIndicator3>(R.id.zebraImageIndicator)
+            circleIndicator.setViewPager(viewPager)
+
+
 
             // 이미지 확대 버튼
             zbrZoomInButton.setOnClickListener {
@@ -60,8 +66,9 @@ class ZebraSettingDetailActivity : AppCompatActivity() {
             })
 
 
-            }
         }
+    }
+
     class ImagePagerAdapter(private val context: Context, private val imageResources: List<Int>) :
         RecyclerView.Adapter<ImagePagerAdapter.ImageViewHolder>() {
 
@@ -102,12 +109,7 @@ class ZebraSettingDetailActivity : AppCompatActivity() {
             notifyDataSetChanged() // 이미지 크기를 초기화하고 갱신
         }
 
-        }
 
     }
 
-
-
-
-
-
+}

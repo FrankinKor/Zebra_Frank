@@ -10,7 +10,6 @@
         android:id="@+id/zebraViewPager"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/imageIndicator"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginHorizontal="0dp"/>
@@ -23,7 +22,7 @@
 <!--&lt;!&ndash;        android:layout_marginBottom="142dp" />&ndash;&gt;-->
 
     <me.relex.circleindicator.CircleIndicator3
-        android:id="@+id/imageIndicator"
+        android:id="@+id/zebraImageIndicator"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_alignParentBottom="true"
@@ -34,12 +33,12 @@
         android:id="@+id/zbrSettingTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/imageIndicator"
         android:text="어떤 내용?"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="10dp"
         android:fontFamily="sans-serif-medium"
         android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
         android:textSize="22sp"
         android:textStyle="bold" />
 
@@ -59,6 +58,9 @@
         android:textColor="@color/black"
         android:textSize="26sp" />
 
+
+<!--    아래는 쉐어 버튼 추가-->
+
     <TextView
         android:id="@+id/zbrZoomOutButton"
         android:layout_width="35dp"
@@ -75,7 +77,32 @@
         android:textSize="26sp"
         android:textColor="@color/black"/>
 
+    <TextView
+        android:id="@+id/zbrRotate"
+        android:layout_width="35dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/gray_square"
+        android:gravity="center"
+        android:text="O"
+        android:textSize="26sp"
+        android:textColor="@color/black"/>
 
 
+
+<!--    <ImageButton-->
+<!--        android:id="@+id/zbrShareButton"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginEnd="7dp"-->
+<!--        android:layout_marginBottom="150dp"-->
+<!--        android:src="@drawable/gybutton" />-->
 
 </RelativeLayout>

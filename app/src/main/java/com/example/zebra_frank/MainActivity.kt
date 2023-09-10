@@ -47,7 +47,7 @@ class MainActivity : AppCompatActivity() {
             myIntent.putExtra("setting", clickedZebra)
             startActivity(myIntent)
 
-          }
         }
-
     }
+
+}
